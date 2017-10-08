@@ -29,6 +29,8 @@ def search_for(item, category="",state=None):
         results.append({link.text.strip():{"link":MILESPLIT + link["href"]},"id":link["href"].split("/")[-1],"description":raw_result.find("div",{"class":"description"}).text.strip(),"type":raw_result.find("span",{"class":"type"}).text.strip()})
     return results
 
+def lookup_athlete(link):
+    
 results = search_for("hough",category="",state="nc")
 for result in results:
     print(result)
