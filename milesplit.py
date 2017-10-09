@@ -44,13 +44,10 @@ def lookup_athlete(id):
      
     races = page.find("table",{"class":"performances"}).find("tbody").findAll("tr")
     for race in races:
-        #print(race)
         if not "thead" in race["class"]:
-            time class=start
-            td class=place
+            # time class=start
+            # td class=place
             
-    # about - name school Class 
-    # PR's - race:time
     # races - event - name, date, place, time
 
 results = search_for("ben ebert",category="",state="nc")
